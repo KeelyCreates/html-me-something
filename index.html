@@ -1,81 +1,154 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>KnitMate</title>
-</head>
-<header>
-    <h1>Knit Mate: Easy Knitting Calculator App</h1>
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Baby Blankets</li>
-            <li>Fingerless Gloves</li>
-            <li>Website Resources</li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <h3>About this Project</h3>
-    <p class="About">
-        This website was built as the precurser to a knitting app for a coding project.<br /><br />
-        Inspiration came when I was trying to adjust a baby blanket pattern that called for 4 weight but
-        I was using 3 weight. I wanted to keep the same size but knew with a thinner yarn, I would need
-        to cast on more stitches/loops to accomadate the difference. But by how much?<br /><br />
-        With this app a user will need to set the yarn weight a pattern calls for, what yarn weight they
-        are using, and the program will calculate the number of stitches they will need to add or subtract
-        to keep the same pattern.
-    </p><br />
-    
-    <h3>My Knitting Projects</h3>
-    <p class="Projects">
-        The first project was a pair of fingerless gloves, <a href="https://www.ravelry.com/patterns/library/fishtail-wristwarmers">
-        Fishtail Wristwarmers</a>, that called for yarn weight fingering (2) and needles sized 2.
-        The yarn I choose was <a href="https://www.ravelry.com/yarns/library/loops--threads-woolike">
-        Loops & Threads Woolike</a> that has a weight of light fingering, aka lace. While I did not adjust
-        the pattern for the first glove, I did make stitch adjustments to the second. However, this began
-        my curiosity to determine a set method or resource that would help me adjust patterns based
-        on yarn weight and needle size.
-        <br /><br />
-        The second project that I had to considered how to adjust the pattern to fit the needle size
-        was <a href="https://www.yarn.com/products/plymouth-yarn-f013-dreambaby-dk-baby-squares-afghan-free">
-            Dream Baby Squares Afghan
-        </a>. The original pattern calls for size 7 needles while I used
-        size 2 needles in the round. I did not adjust the pattern size however this did begin my
-        curiosity on how to calculate adjustments to a pattern based on either neede size or yarn weight.
-        <br /><br />
-        <a href="https://www.flickr.com/photos/taevlyn/48034463762/in/album-72157709011598713/"><img src="https://live.staticflickr.com/65535/48034463762_3404f4434a_h.jpg"></a>
-        <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-        <br /><br />
-    </p>
 
-    <ol>
-        <h3>Website Resources:</h3>
+<main class="'main">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>KnitMate</title>
+    </head>
 
-    For my project I am using the following websites as resources and mathmatical guides to build
-    an app to calculate pattern adjustments based on yarn weight and needle size.
-        <br /> <br />
-        <li>
-            <a href="https://www.marthastewart.com/1538242/best-knitting-apps">
-                Martha Stewart's List of Best Knitting Apps
-            </a>
-        </li>
-        <li>
-            <a href="https://www.annbuddknits.com/My_Favorite_Formula_v020310.pdf">
-                Ann Budd Knits (for formulas)
-            </a>
-        </li>
-        <li>
-            <a href="https://knitmuch.com/how-to-substitute-yarn-sizes-in-a-pattern/">
-                Knit Much(for substituing yarn sizes in a pattern)
-            </a>
-        </li>
-        <li>
-            <a href="https://www.thesprucecrafts.com/adjusting-a-knitting-pattern-2116313">
-                The Spruce Crafts (for adjusting knitting patterns
-            </a>
-        </li>
-    </ol>
-</body>
+    <header class="header">
+        <div class="grid">
+            <div class="box a">
+            <a id="yarn" href="https://www.flickr.com/photos/taevlyn/48039121582/in/dateposted-public/" title="123rf.com Ball of Yarn Clipart">
+            <img src="https://live.staticflickr.com/65535/48039121582_73a6bf3cf7.jpg" width="100" height="100"></a>
+            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+            </div>
+
+            <div class="box b">
+                <h1>Knit Mate: Easy Knitting Calculator App</h1>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <nav class="navlist">
+                <ul>
+                    <li>About</li>
+                    <li>Baby Blankets</li>
+                    <li>Fingerless Gloves</li>
+                    <li>Website Resources</li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <body>
+        <div class="box d">
+            <h2 id="about">About this Project</h2>
+            <p id="blerb">
+                This website was built as the precurser to a knitting app for a coding project.<br /><br />
+                Inspiration came when I was trying to adjust a baby blanket pattern that called for 4 weight but
+                I was using 3 weight. I wanted to keep the same size but knew with a thinner yarn, I would need
+                to cast on more stitches/loops to accomadate the difference. But by how much?<br /><br />
+                With this app a user will need to set the yarn weight a pattern calls for, what yarn weight they
+                are using, and the program will calculate the number of stitches they will need to add or subtract
+                to keep the same pattern.
+            </p><br />
+        </div>
+
+        <div>
+            <h2 class="projects title">My Knitting Projects</h2>
+
+            <h3 class="gloves">Fingerless Gloves</h3>
+            <p id="gloves paragraph">
+                The first project was a pair of fingerless gloves, <a href="https://www.ravelry.com/patterns/library/fishtail-wristwarmers">
+                    Fishtail Wristwarmers
+                </a>, that called for yarn weight fingering (2) and needles sized 2.
+                The yarn I choose was <a href="https://www.ravelry.com/yarns/library/loops--threads-woolike">
+                    Loops & Threads Woolike
+                </a> that has a weight of light fingering, aka lace. While I did not adjust
+                the pattern for the first glove, I did make stitch adjustments to the second. However, this began
+                my curiosity to determine a set method or resource that would help me adjust patterns based
+                on yarn weight and needle size.
+                <br />
+                <a href="https://github.com/KeelyCreates/html-me-something/blob/master/IMAG0776.jpg?raw=true">
+                    <img class="glovespic" src="IMAG0776.jpg" title="Fishtail Fingerless Glove, Left">
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <h3 class="blanket">Baby Blanket</h3>
+            <p id="blanket paragraph">
+                The second project that I had to considered how to adjust the pattern to fit the needle size
+                was <a href="https://www.yarn.com/products/plymouth-yarn-f013-dreambaby-dk-baby-squares-afghan-free">
+                    Dream Baby Squares Afghan
+                </a>. The original pattern calls for size 7 needles while I used
+                size 2 needles in the round. I did not adjust the pattern size however this did begin my
+                curiosity on how to calculate adjustments to a pattern based on either neede size or yarn weight.
+                <br />
+            <a href="https://github.com/KeelyCreates/html-me-something/blob/master/IMG_20181019_143951.jpg?raw=true">
+                <image class="blanketpic" src="IMG_20181019_143951.jpg" title="Baby Blanket Afghan"></image>
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <ol class="resources">
+                <h2 class="resource title">Website Resources:</h2>
+                <p class="links description">
+                    For my project I am using the following websites as resources and mathmatical guides to build
+                    an app to calculate pattern adjustments based on yarn weight and needle size.
+                </p>
+
+                <br />
+                <br />
+
+                <li>
+                    <a href="https://www.marthastewart.com/1538242/best-knitting-apps">
+                        Martha Stewart's List of Best Knitting Apps
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.annbuddknits.com/My_Favorite_Formula_v020310.pdf">
+                        Ann Budd Knits (for formulas)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://knitmuch.com/how-to-substitute-yarn-sizes-in-a-pattern/">
+                        Knit Much(for substituing yarn sizes in a pattern)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.thesprucecrafts.com/adjusting-a-knitting-pattern-2116313">
+                        The Spruce Crafts (for adjusting knitting patterns
+                    </a>
+                </li>
+            </ol>
+
+        </div>
+        <div>
+            <ol >
+                <h2 >Website Sources</h2>
+                <br />
+
+                <li>
+                    <a href="https://www.shutterstock.com/image-vector/geometric-diamond-tile-minimal-graphic-vector-610513562?src=3XsgZkw-LtUYkAdR-i5Q0g-1-38">
+                       Shutter Stock for header background image.
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.123rf.com/clipart-vector/ball_of_yarn.html?sti=o1jgk2fmr7fz6gubps|&mediapopup=101045705">
+                        Stock Images for header yarn and needles image.
+                    </a>
+                </li>
+                <li>
+                    <a href="https://knitmuch.com/how-to-substitute-yarn-sizes-in-a-pattern/">
+                        Knit Much(for substituing yarn sizes in a pattern)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.thesprucecrafts.com/adjusting-a-knitting-pattern-2116313">
+                        The Spruce Crafts (for adjusting knitting patterns
+                    </a>
+                </li>
+            </ol>
+
+        </div>
+    </body>
 </html>
+
+<footer class="footer"></footer>
+</main>
